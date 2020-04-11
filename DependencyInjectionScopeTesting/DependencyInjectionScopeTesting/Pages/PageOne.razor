@@ -1,0 +1,17 @@
+﻿@inherits Base<ServiceOne>
+@page "/"
+@page "/PageOne"
+
+<h1>PageOne</h1>
+
+<div>
+    Go to <a href="/PageTwo">page two</a>!
+</div>
+
+<div>
+    The count: @Service.Counter
+</div>
+
+<div>
+    <button @onclick="() => { Service.Counter++; }">Increment</button>
+</div>
