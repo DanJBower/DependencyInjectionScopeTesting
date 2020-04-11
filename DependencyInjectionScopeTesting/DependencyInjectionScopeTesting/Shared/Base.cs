@@ -7,7 +7,7 @@ namespace DependencyInjectionScopeTesting.Shared
     public class Base<T> : ComponentBase, IDisposable
     {
         [Inject]
-        public T Service { get; set; }
+        protected T Service { get; set; }
 
         public Base()
         {
